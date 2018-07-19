@@ -12,8 +12,8 @@ import Home from '../containers/front/home'
 
 const routes = (
     <Route>
-        <Route path="/" component={Door} />
-        <Route path="/home" component={Home} />
+        {/* <Route path="/" component={Door} /> */}
+        <Route path="/" component={Home} />
     </Route>
 );
 

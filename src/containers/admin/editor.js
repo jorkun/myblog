@@ -132,7 +132,7 @@ class Editor extends Component {
                         <ul className="list">{this._renderActivityList(activity)}</ul>
                     </div>
                     <div className="products">
-                        <h2 className="title" style={{backgroundColor: currentPage.get('color')}}>精选商品</h2>
+                        <h2 className="title" style={{backgroundColor: currentPage.get('color')}}></h2>
                         <ul className="list">{this._renderProductList(product)}</ul>
                     </div>
                 </div>

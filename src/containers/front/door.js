@@ -40,7 +40,7 @@ class Door extends Component {
         return (
             <div className="door">
                 <div className="mask">
-                    <Animation style={{display: 'block', fontSize:"20px",color: "#fff"}} name="scaleIn" speed='fast' className="modal">
+                    <Animation style={{display: 'block'}} name="scaleIn" speed='fast' className="modal">
                         敬请期待。。。。。。。。
                         {/* <div className="input-row">
                             <span className="input-label">应户名</span>

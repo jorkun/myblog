@@ -1,7 +1,7 @@
 /**
  * @desc 项目webpack配置文件
- * @author Jafeney <692270687@qq.com>
- * @dateTime 2016-12-23
+ * @author jorkun <987022608@qq.com>
+ * @dateTime 2018-07-19
  **/
 
 var webpack = require('webpack');

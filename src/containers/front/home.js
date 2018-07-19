@@ -1,7 +1,7 @@
 /**
- * @desc 商城主页
- * @author Jafeney <692270687@qq.com>
- * @dateTime 2016-12-23
+ * @desc 博客首页
+ * @author Jorkun <987022608@qq.com>
+ * @dateTime 2018-07-19
  **/
 
 import React, { Component } from 'react'
@@ -31,7 +31,6 @@ class Home extends Component {
         let _pid = this.props.currentPage.get('id') || window.localStorage.pid;
         window.localStorage.pid = _pid;
         if (_pid) {
-            document.getElementById('page_title').innerHTML = `有福企业内购平台-${this.props.currentPage.get('name')}`;
             this.props.actions.getCarousel({ params: {pid: _pid }})
             this.props.actions.getActivity({ params: {pid: _pid }})
             this.props.actions.getProduct({ params: {pid: _pid }})
@@ -87,7 +86,6 @@ class Home extends Component {
                     <li className="item" onClick={()=>this.toPageDetail(item.get('a_link'))}>
                         <img src={item.get('a_img')} className="img" />
                         <p className="title">
-                            <span className="tag">惠</span>
                             <span className="txt">{item.get('a_title')}</span>
                         </p>
                     </li>
@@ -118,7 +116,7 @@ class Home extends Component {
                     <ul className="list">{this._renderActivityList(activity)}</ul>
                 </div>
                 <div className="products">
-                    <h2 className="title" style={{backgroundColor: window.localStorage.page_color || '#f15b6c'}}>精选商品</h2>
+                    <h2 className="title" style={{backgroundColor: window.localStorage.page_color || '#f15b6c'}}></h2>
                     <ul className="list">{this._renderProductList(product)}</ul>
                 </div>
             </Animation>

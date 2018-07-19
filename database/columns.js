@@ -74,22 +74,22 @@ export const ACTIVITYS = [
 
 export const PRODUCTS = [
     {
-        title: '商品主图',
+        title: '主图',
         dataIndex: 'img',
         key: 'img',
     },
     {
-        title: '微盟链接',
+        title: '链接',
         dataIndex: 'link',
         key: 'link',
     },
     {
-        title: '商品名称',
+        title: '名称',
         dataIndex: 'name',
         key: 'name',
     },
     {
-        title: '商品价格',
+        title: '介绍',
         dataIndex: 'price',
         key: 'price',
     },{
