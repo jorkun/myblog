@@ -22,7 +22,7 @@ class Door extends Component {
     }
 
     componentDidMount() {
-        document.getElementById('page_title').innerHTML = '有福企业内购平台';
+        document.getElementById('page_title').innerHTML = '君梦无痕';
         this.props.actions.getPageNames({})
     }
 
@@ -41,9 +41,10 @@ class Door extends Component {
         return (
             <div className="door">
                 <div className="mask">
-                    <Animation style={{display: 'block'}} name="scaleIn" speed='fast' className="modal">
-                        <div className="input-row">
-                            <span className="input-label">选择您的企业</span>
+                    <Animation style={{display: 'block', fontSize:"20px"}} name="scaleIn" speed='fast' className="modal">
+                        敬请期待。。。。。。。。
+                        {/* <div className="input-row">
+                            <span className="input-label">应户名</span>
                             <select ref="company" className="select">
                                 {this._renderPageItems(pageNames)}
                             </select>
@@ -53,7 +54,7 @@ class Door extends Component {
                             <input ref="code" placeholder="输入您的邀请码" type="number" className="input" />
                         </div>
                         <div onClick={()=>this.toHome()}
-                            className="input-submit">抢福利（仅对合作企业开放）</div>
+                            className="input-submit">抢福利（仅对合作企业开放）</div> */}
                     </Animation>
                 </div>
             </div>
